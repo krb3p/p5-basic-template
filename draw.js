@@ -25,7 +25,7 @@ function draw() {
   // Make fountain
   firstFountain.Draw();
   firstFountain.CreateN();  //must use CreateN for "rate" control
-  firstFountain.Step();
+  firstFountain.Step(); // Move everything in the fountain to the next frame (like an animator does)
   noStroke();
   // "length" here will count the number of items in the fountain
   text(firstFountain.length, width/2, 20);
