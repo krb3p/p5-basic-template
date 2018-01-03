@@ -1,13 +1,13 @@
 function setup() {
   createCanvas(800, 600)
-  var t =
+  var fountainData =
     {
         name: "test",
         colors: ["blue","green","red"],
-        lifetime: 300,
+        lifetime: 400,
         angle: [250,290],
         size: [2,8],
-        speed: 2,
+        speed: 3,
         speedx: 0.7,
         //40 at .1 probability/step
         //then 200 steps at 10 particles/step
@@ -15,7 +15,7 @@ function setup() {
         x: 0.5,
         y: 0.8
     };
-    firstFountain = new Fountain(null, t);
+    firstFountain = new Fountain(null, fountainData);
 }
 
 function draw() {
@@ -29,5 +29,4 @@ function draw() {
   noStroke();
   // "length" here will count the number of items in the fountain
   text(firstFountain.length, width/2, 20);
-  stroke(0);
 }
