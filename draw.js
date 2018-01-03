@@ -11,7 +11,7 @@ function setup() {
         speedx: 0.7,
         //40 at .1 probability/step
         //then 200 steps at 10 particles/step
-        rate: [40,0.1,200,1],
+        rate: [40,0.1,200,10],
         x: 0.5,
         y: 0.8
     };
